@@ -17,3 +17,12 @@ print(seperators)
 
 values = "".join(char if char not in seperators else " " for char in number).split()
 print([int(val) for val in values])
+
+separators = ""
+
+for char in number:
+    if not char.isnumeric():
+        separators = separators + char
+
+print(separators)
+
